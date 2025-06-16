@@ -3,6 +3,22 @@ layout: post
 title: "刻起信論直解題辭"
 audio: "https://dl.dropboxusercontent.com/scl/fi/zqg1r7zyf53ofhvf83w85/3-1.mp3?rlkey=tky39f72tb0ypicaujsh65v3d&st=p0pn69gj&dl=1"
 ---
+<!-- 오디오 플레이어 직접 삽입 -->
+<audio id="audio-player" controls style="width:100%;">
+  <source src="https://dl.dropboxusercontent.com/scl/fi/zqg1r7zyf53ofhvf83w85/3-1.mp3?rlkey=tky39f72tb0ypicaujsh65v3d&st=p0pn69gj&dl=1" type="audio/mpeg">
+  이 브라우저는 오디오를 지원하지 않습니다.
+</audio>
+
+<div class="mt-2 flex space-x-2">
+    <button onclick="setSpeed(1)" class="px-2 py-1 bg-gray-200 rounded">1.0x</button>
+    <button onclick="setSpeed(1.5)" class="px-2 py-1 bg-gray-200 rounded">1.5x</button>
+    <button onclick="setSpeed(2)" class="px-2 py-1 bg-gray-200 rounded">2.0x</button>
+</div>
+<script>
+function setSpeed(rate) {
+    document.getElementById('audio-player').playbackRate = rate;
+}
+</script>
 
 > **起信論者。乃馬鳴大師爲破小乘外道邪見。宗百部大乘經典所作。以爲發起正信也。**
 >
